@@ -1,0 +1,26 @@
+@import "../utils/variables";
+
+.menus {
+    background-color: #f6f6f6;
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .menus__cards {
+        display: grid;
+        flex-wrap: wrap;
+        gap: 12rem;
+    }
+
+    .card {
+        &__image {
+            background-image: url(../../images/restaurants/menu_1.jpg);
+            height: 15rem;
+            background-size: cover;
+            border-radius: 2rem;
+        }
+        height: 4rem;
+        flex-grow: 1;
+        min-width: 30rem;
+    }
+}

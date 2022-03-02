@@ -1,0 +1,23 @@
+@import "../utils/mixins.scss";
+
+.title {
+    text-align: center;
+    font-size: 1.1rem;
+
+
+    & button {
+        border-radius: 2rem;
+        padding: 1rem;
+        background-image: linear-gradient(to top, #9356DC, #FF79DA);
+        color: white;
+        font-weight: bolder;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        @include base-shadow;
+    }
+    & button:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}
