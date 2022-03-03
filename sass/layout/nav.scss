@@ -1,9 +1,14 @@
-@import "../utils/zoom.scss";
+@import "../utils/mixins.scss";
 @import "../utils/variables";
 
 .menu {
     counter-reset: steps;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+    
+
+    h2 {
+        margin-left: 2rem;
+    }
     & ol {
         display: flex;
         gap: 2rem;
