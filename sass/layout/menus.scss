@@ -47,10 +47,6 @@
         margin-top: -1rem;
         @include base-shadow;
 
-        h3,
-        p {
-            padding: 0.3rem;
-        }
         i {
             position: absolute;
             right: 1rem;
@@ -65,9 +61,15 @@
             transition: all 200ms ease-in-out;
             @include gradient;
         }
+        
         &:hover .fas {
             opacity: 1;
             transform: translateY(-50%) scale(1.2);
+        }
+
+        h3,
+        p {
+            padding: 0.3rem;
         }
     }
 }
