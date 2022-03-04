@@ -1,7 +1,5 @@
+@import "../utils/mixins.scss";
+
 header {
-    text-align: center;
-    padding: 0.3rem;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    font-family: 'Shrikhand', cursive;
-    position: relative;
+    @include header;
 }
