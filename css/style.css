@@ -36,6 +36,11 @@ header {
   position: relative;
 }
 
+header h1 {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
 .city {
   background-color: #f0ebeb;
   text-align: center;
@@ -49,6 +54,9 @@ header {
 .city i {
   font-size: 1.3rem;
 }
+.city h2 {
+  font-weight: 400;
+}
 
 .title {
   text-align: center;
@@ -56,6 +64,7 @@ header {
   background-color: #f6f6f6;
   margin: -1rem;
   margin-bottom: 4rem;
+  font-weight: 300;
 }
 .title button {
   border-radius: 2rem;
@@ -100,7 +109,7 @@ header {
   border-radius: 1rem;
   flex-grow: 1;
   list-style-type: none;
-  box-shadow: 2px 1px 8px -3px black;
+  box-shadow: 2px 1px 8px -3px #838080;
 }
 .menu li::before {
   content: counter(steps);
@@ -122,8 +131,11 @@ header {
 }
 .menu li i.fas {
   margin-right: 1rem;
-  color: #7e7e7e;
+  color: #f5f4f4;
   font-size: 1.5rem;
+}
+.menu li i.fas:hover {
+  color: #9356DC;
 }
 
 .menus {
@@ -200,7 +212,7 @@ footer {
 }
 footer h2 {
   font-family: "Shrikhand", cursive, "sans-serif";
-  font-weight: 200;
+  font-weight: 100;
   margin-bottom: -0.8rem;
   font-size: 1.2rem;
 }
@@ -210,16 +222,79 @@ footer li {
 }
 footer ul {
   padding: 0.5rem;
+  margin-left: -1rem;
 }
 footer .footer_icon {
   margin-right: 0.5rem;
-}
-footer footer p {
-  margin-left: 0.2rem;
+  width: 1.2rem;
 }
 
-img {
+.resto__title {
+  background-color: white;
+  position: relative;
+  margin-top: -59px;
+  border-radius: 3rem 3rem;
+}
+.resto__title h2 {
+  font-family: "Shrikhand", cursive;
+  padding: 2rem 1rem;
+}
+
+.banner img {
+  display: block;
   max-width: 100%;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu__title i {
+  position: absolute;
+  right: 1rem;
+  transform: translateY(-50%);
+  top: 20rem;
+}
+
+.menu__title i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu__title .fas {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.menu__title:hover .fas {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+.menu__title .main__like {
+  position: relative;
+  top: -4rem;
+}
+
+.menu__full {
+  background-color: #f5f4f4;
+}
+.menu__full .meal {
+  background-color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  box-shadow: 2px 1px 8px -3px #838080;
+}
+.menu__full .last__line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.resto__main {
+  padding: 0 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

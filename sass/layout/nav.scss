@@ -41,7 +41,7 @@
         border-radius: 1rem;
         flex-grow: 1;
         list-style-type: none;
-        @include base-shadow;
+        @include base-white;
         &:hover {
             @include zoom;
         }
@@ -49,6 +49,9 @@
             margin-right: 1rem;
             color: $light-grey;
             font-size: 1.5rem;
+            &:hover {
+                color: $color-primary;
+            }
             
         }
     }
