@@ -42,3 +42,46 @@
     }
 
 }
+@mixin footer {
+    footer {
+        background-color: $color-darkgrey;
+        color: white;
+        padding: 1px 2rem;
+        margin-top: 5rem;
+    
+        h2 {
+            font-family: $font-cursive, "sans-serif";
+            font-weight: 100;
+            margin-bottom: -0.8rem;
+            font-size: 1.2rem;
+    
+        }
+        li {
+            list-style-type: none;
+            padding: 0.2rem;
+        }
+        & ul {
+            padding: 0.5rem;
+            margin-left: -1rem;
+        }
+        .footer_icon {
+            margin-right: 0.5rem;
+            width: 1.2rem;
+        }
+    }
+}
+@mixin btn {
+    
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 25px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    & button:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}
