@@ -5,6 +5,9 @@
     box-shadow: 2px 1px 8px -3px #838080;
 
 }
+@mixin box-white {
+    box-shadow: 1px 9px 8px #e6e6e6;
+}
 @mixin gradient {
     background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
@@ -71,7 +74,6 @@
     }
 }
 @mixin btn {
-    
     border-radius: 2rem;
     padding: 1rem;
     margin: 25px;
@@ -80,8 +82,19 @@
     border: none;
     font-size: 1rem;
     cursor: pointer;
-    & button:hover {
+    @include base-shadow;
+    @include gradient;
+    &:hover {
         transform: scale(1.02);
         opacity: 0.9;
     }
+}
+@mixin font-awesome {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webki-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }

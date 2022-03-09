@@ -1,6 +1,19 @@
 @import "../utils/mixins.scss";
 @import "../utils/animation.scss";
 
+header::before {
+    position: absolute;
+    @include font-awesome;
+    content: "\f060";
+    width: 10rem;
+    height: 2rem;
+    color: rgb(0, 0, 0);
+    left: 1rem;
+    top: 37%;
+    font-size: 1.5rem;
+}
+
+
 .resto__title{
     background-color: $light-grey;
     position: relative;
@@ -91,23 +104,31 @@
 
         }
     }
-    &:hover .item__check {
+    &:hover {
+        cursor: pointer;
+    .item__check {
         margin-right: 0;
+        }
         i {
             @include quarterspin;
             animation: quarterspin 0.5s ease-in-out;
         }
     }
 }
-button {
-    @include btn;
-    @include base-shadow;
-    @include gradient;
-    & button:hover {
-        transform: scale(1.02);
-        opacity: 0.9;
+section.order {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+    button {
+        @include btn;
     }
 }
+
+
+
+
+
 
 
 
