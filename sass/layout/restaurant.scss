@@ -3,17 +3,18 @@
 
 
 #page__resto {
-    header::before {
-        position: absolute;
-        @include font-awesome;
-        content: "\f060";
-        display: flex;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 1rem;
-        font-size: 20px;
+    header {
+        &::before {
+            position: absolute;
+            @include font-awesome;
+            content: "\f060";
+            display: flex;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1rem;
+            font-size: 20px;
+        }
     }
-
     .resto__title{
         background-color: $light-grey;
         position: relative;
@@ -28,6 +29,7 @@
     }
     .resto__main {
         background-color: $light-grey;
+        padding: 1rem;
         h3 {
             margin-bottom: 2rem;
             margin-top: 3rem;
@@ -66,8 +68,16 @@
         overflow: hidden;
         margin: 1rem;
         @include base-white;
-        
+
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                animation-delay: 100ms * $i;
+            }
+        }
         .list__item {
+            animation: appear 1s ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 1s;
             display: flex;
             overflow: hidden;
         }
