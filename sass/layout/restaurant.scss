@@ -1,128 +1,130 @@
 @import "../utils/mixins.scss";
 @import "../utils/animation.scss";
 
-header::before {
-    position: absolute;
-    @include font-awesome;
-    content: "\f060";
-    width: 10rem;
-    height: 2rem;
-    color: rgb(2, 2, 2);
-    left: 1rem;
-    top: 37%;
-    font-size: 1.5rem;
-}
 
-
-.resto__title{
-    background-color: $light-grey;
-    position: relative;
-    margin-top: -59px;
-    border-radius: 3rem 3rem 0 0;
-
-    h2 {
-        font-family: "Shrikhand", cursive;
-        padding: 2rem 1rem;
-        margin: 0;
+#page__resto {
+    header::before {
+        position: absolute;
+        @include font-awesome;
+        content: "\f060";
+        display: flex;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        font-size: 20px;
     }
-}
-.resto__main {
-    background-color: $light-grey;
-    h3 {
-        margin-bottom: 2rem;
-        margin-top: 3rem;
-        font-weight: 300;
+
+    .resto__title{
+        background-color: $light-grey;
         position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 1.5rem;
-            left: 0;
-            height: 0.25rem;
-            width: 3rem;
-            background-color: $color-tertiary;
-        }
-    }
-    p {
-        font-weight: 300;
-        font-size: 0.9rem;
-        padding: 0.2rem;
-    }
-}
-.main__like{
-    @include heart;
-}
-.banner img {
-    display: block;
-    max-width: 100%;
-    max-height: 32rem;
-    width: 100%;
-    object-fit: cover;
-}
+        margin-top: -59px;
+        border-radius: 3rem 3rem 0 0;
 
-.menu__category {
-    background-color: $light-grey;
-    border-radius: 1rem;
-    overflow: hidden;
-    margin: 1rem;
-    @include base-white;
-    
-    .list__item {
-        display: flex;
-        overflow: hidden;
-    }
-    .item__price {
-        margin-left: auto;
-        font-weight: 900;
-        padding: 1rem;
-        display: flex;
-        align-items: flex-end;
-    }
-    .item__description {
-        padding: 1rem;
-        overflow: hidden;
-        h4,
-        p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        h2 {
+            font-family: "Shrikhand", cursive;
+            padding: 2rem 1rem;
+            margin: 0;
         }
     }
-    .item__check {
-        $button-width: 4rem;
-        border-radius: 0 1rem 1rem 0;
-        background-color: $color-tertiary;
-        margin-right: -$button-width;
-        width: $button-width;
-        transition: margin-right 0.5s;
+    .resto__main {
+        background-color: $light-grey;
+        h3 {
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            font-weight: 300;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 1.5rem;
+                left: 0;
+                height: 0.25rem;
+                width: 3rem;
+                background-color: $color-tertiary;
+            }
+        }
+        p {
+            font-weight: 300;
+            font-size: 0.9rem;
+            padding: 0.2rem;
+        }
+    }
+    .main__like{
+        @include heart;
+    }
+    .banner img {
+        display: block;
+        max-width: 100%;
+        max-height: 32rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .menu__category {
+        background-color: $light-grey;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin: 1rem;
+        @include base-white;
+        
+        .list__item {
+            display: flex;
+            overflow: hidden;
+        }
+        .item__price {
+            margin-left: auto;
+            font-weight: 900;
+            padding: 1rem;
+            display: flex;
+            align-items: flex-end;
+        }
+        .item__description {
+            padding: 1rem;
+            overflow: hidden;
+            h4,
+            p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            }
+        }
+        .item__check {
+            $button-width: 4rem;
+            border-radius: 0 1rem 1rem 0;
+            background-color: $color-tertiary;
+            margin-right: -$button-width;
+            width: $button-width;
+            transition: margin-right 0.5s;
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            i {
+                color: white;
+                font-size: 1.5rem;
+
+            }
+        }
+        &:hover {
+            cursor: pointer;
+        .item__check {
+            margin-right: 0;
+            }
+            i {
+                @include quarterspin;
+                animation: quarterspin 0.5s ease-in-out;
+            }
+        }
+    }
+    section.order {
+        height: 10vh;
         display: grid;
         place-items: center;
-        flex-shrink: 0;
-        i {
-            color: white;
-            font-size: 1.5rem;
+        margin: 2rem;
+        button {
+            @include btn;
+        }
+    }
 
-        }
-    }
-    &:hover {
-        cursor: pointer;
-    .item__check {
-        margin-right: 0;
-        }
-        i {
-            @include quarterspin;
-            animation: quarterspin 0.5s ease-in-out;
-        }
-    }
-}
-section.order {
-    height: 10vh;
-    display: grid;
-    place-items: center;
-    margin: 2rem;
-    button {
-        @include btn;
-    }
 }
 
 
