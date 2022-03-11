@@ -9,7 +9,7 @@
     box-shadow: 1px 9px 8px #e6e6e6;
 }
 @mixin gradient {
-    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    background-image: linear-gradient(to top, $color-primary, $color-secondary);
 }
 @mixin zoom {
     transform: scale(1.02);
@@ -34,6 +34,8 @@
         color: transparent;
         opacity: 0;
         transition: all 200ms ease-in-out;
+        background-clip: text;
+        -webkit-background-clip: text;
         @include gradient;
     }
     
