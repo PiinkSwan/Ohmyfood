@@ -17,6 +17,8 @@
         font-weight: bolder;
         border: none;
         font-size: 1rem;
+        cursor: pointer;
+        width: 15rem;;
         transition-duration: .25s;
         @include base-shadow;
         @include gradient;

@@ -59,7 +59,6 @@
         max-width: 100%;
         max-height: 32rem;
         width: 100%;
-        object-fit: cover;
     }
 
     .menu__category {
@@ -67,19 +66,18 @@
         border-radius: 1rem;
         overflow: hidden;
         margin: 1rem;
+        animation-fill-mode: both;
+        animation: appear 1s;
         @include base-white;
-
-        @for $i from 1 through 3 {
-            &:nth-child(#{$i}) {
+        .list__item {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
                 animation-delay: 100ms * $i;
             }
+        display: flex;
+        overflow: hidden;
         }
-        .list__item {
-            animation: appear 1s ease-in-out;
-            animation-fill-mode: both;
-            animation-delay: 1s;
-            display: flex;
-            overflow: hidden;
+        
         }
         .item__price {
             margin-left: auto;
@@ -133,6 +131,9 @@
         button {
             @include btn;
         }
+    }
+    .footer {
+        margin: 0;
     }
 
 }
