@@ -5,12 +5,18 @@
 .menus {
     padding: 9px;
     margin-bottom: 2rem;
+    @media (min-width: $break-point) {
+    }
+
     
-    
+    .menus__title {
+        @media (min-width: $break-point) {
+            text-align: center;
+        }
+    }
     h2 {
         margin-left: 1rem;
     }
-
     .menus__cards {
         display: grid;
         flex-wrap: wrap;
@@ -19,12 +25,20 @@
         padding: 1rem;
         margin: -1.5rem;
         padding-bottom: 6rem;
+        @media (min-width: $break-point) {
+            margin: auto;
+            max-width: 1667px;
+            grid-template-columns: repeat(2,1fr);
+            position: relative;
+        }
         .card_image {
             width: 100%;
             height: 199px;
             border-radius: 1rem 1rem 0 0;
             object-fit: cover;
             @include base-white;
+            @media (min-width: $break-point) {
+            }
         }
     }
     .new {

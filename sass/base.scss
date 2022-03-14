@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@import "./utils/variables";
 body {
-    margin-top: -1rem;
     padding: 0;
     margin: 0px;
     font-family: "roboto", sans-serif;
 }
 main {
     padding: 0 1rem;
+    @media (min-width: $break-point) {
+    }
+
 }
 a {
     text-decoration: none;
@@ -21,5 +24,5 @@ p {
     margin: 0;
 }
 footer {
-    margin-top: -1rem;
+    margin-top: -2rem;
 }

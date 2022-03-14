@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
 body {
-  margin-top: -1rem;
   padding: 0;
   margin: 0px;
   font-family: "roboto", sans-serif;
@@ -10,7 +9,6 @@ body {
 main {
   padding: 0 1rem;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -27,7 +25,7 @@ p {
 }
 
 footer {
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 
 header {
@@ -169,6 +167,11 @@ header h1 {
   padding: 9px;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .menus .menus__title {
+    text-align: center;
+  }
+}
 .menus h2 {
   margin-left: 1rem;
 }
@@ -180,6 +183,14 @@ header h1 {
   padding: 1rem;
   margin: -1.5rem;
   padding-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .menus .menus__cards {
+    margin: auto;
+    max-width: 1667px;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
 }
 .menus .menus__cards .card_image {
   width: 100%;
