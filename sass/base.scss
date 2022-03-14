@@ -2,13 +2,11 @@
 @import "./utils/variables";
 body {
     padding: 0;
-    margin: 0px;
+    margin: 0;
     font-family: "roboto", sans-serif;
 }
 main {
     padding: 0 1rem;
-    @media (min-width: $break-point) {
-    }
 
 }
 a {

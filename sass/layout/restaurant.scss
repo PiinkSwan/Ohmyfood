@@ -68,7 +68,7 @@
         margin: 1rem;
         @include base-white;
         animation-fill-mode: both;
-        animation: appear 1s;
+        animation: appear 2s;
         .list__item {
             display: flex;
             overflow: hidden;
