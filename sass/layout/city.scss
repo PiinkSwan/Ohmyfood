@@ -15,3 +15,8 @@
         font-weight: 400;
     }
 }
+.loader {
+    @include loader;
+    
+}
+

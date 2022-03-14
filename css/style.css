@@ -59,6 +59,29 @@ header h1 {
   font-weight: 400;
 }
 
+.loader {
+  background-color: #f5f4f4;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  display: grid;
+  place-items: center;
+  transform-origin: top;
+  animation: disappear 200ms 5s forwards;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #FF79DA;
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+}
+
 .title {
   text-align: center;
   font-size: 1.1rem;
@@ -236,11 +259,26 @@ footer .footer_icon {
 }
 
 @keyframes appear {
-  0% {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  from {
+    transform: scale(1);
+  }
+  to {
     transform: scale(0);
   }
-  100% {
-    transform: scale(1);
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
 #page__resto header::before {
@@ -321,15 +359,11 @@ footer .footer_icon {
   border-radius: 1rem;
   overflow: hidden;
   margin: 1rem;
+  box-shadow: 2px 1px 8px -3px #838080;
   animation-fill-mode: both;
   animation: appear 1s;
-  box-shadow: 2px 1px 8px -3px #838080;
 }
 #page__resto .menu__category .list__item {
-  display: flex;
-  overflow: hidden;
-  display: flex;
-  overflow: hidden;
   display: flex;
   overflow: hidden;
 }
@@ -383,10 +417,10 @@ footer .footer_icon {
   animation: quarterspin 0.5s ease-in-out;
 }
 @keyframes quarterspin {
-  0% {
+  from {
     transform: rotate(-270deg);
   }
-  100% {
+  to {
     transform: rotate(0);
   }
 }
