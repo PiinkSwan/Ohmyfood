@@ -106,7 +106,7 @@
         display: grid;
         place-items: center;
         transform-origin: top;
-        animation: disappear 200ms 5s forwards;
+        animation: disappear 200ms 3s forwards;
         &::after {
             content: "";
             height: 100px;

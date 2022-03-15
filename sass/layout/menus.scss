@@ -5,12 +5,8 @@
 .menus {
     padding: 9px;
     margin-bottom: 2rem;
-    @media (min-width: $break-point) {
-    }
-
-    
     .menus__title {
-        @media (min-width: $break-point) {
+        @media (min-width: $mobile) {
             text-align: center;
         }
     }
@@ -25,7 +21,7 @@
         padding: 1rem;
         margin: -1.5rem;
         padding-bottom: 6rem;
-        @media (min-width: $break-point) {
+        @media (min-width: $mobile) {
             margin: auto;
             max-width: 1667px;
             grid-template-columns: repeat(2,1fr);
@@ -37,8 +33,6 @@
             border-radius: 1rem 1rem 0 0;
             object-fit: cover;
             @include base-white;
-            @media (min-width: $break-point) {
-            }
         }
     }
     .new {
