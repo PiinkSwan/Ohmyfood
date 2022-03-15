@@ -318,6 +318,7 @@ footer .footer_icon {
   font-family: "Shrikhand", cursive;
   padding: 2rem 1rem;
   margin: 0;
+  font-weight: 500;
 }
 #page__resto .resto__main {
   background-color: #f5f4f4;
