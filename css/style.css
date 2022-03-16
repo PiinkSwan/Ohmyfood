@@ -69,7 +69,7 @@ header h1 {
   display: grid;
   place-items: center;
   transform-origin: top;
-  animation: disappear 200ms 3s forwards;
+  animation: disappear 200ms 1s forwards;
 }
 .loader::after {
   content: "";
@@ -79,7 +79,7 @@ header h1 {
   border-top: 5px solid #9356DC;
   border-bottom: 5px solid #FF79DA;
   border-radius: 50%;
-  animation: spin 3s infinite linear;
+  animation: spin 2s infinite linear;
 }
 
 .title {
@@ -273,7 +273,7 @@ footer .footer_icon {
 
 @keyframes appear {
   from {
-    transform: translateY(50%);
+    transform: translateY(-50%);
     opacity: 0;
   }
   to {
@@ -393,23 +393,23 @@ footer .footer_icon {
   background-color: #f5f4f4;
   border-radius: 1rem;
   overflow: hidden;
+  animation-fill-mode: both;
+  animation: appear 1s;
   margin: 1rem;
   box-shadow: 2px 1px 8px -3px #838080;
-  animation-fill-mode: both;
-  animation: appear 2s;
+}
+#page__resto .menu__category:nth-child(2) {
+  animation-delay: 200ms;
+}
+#page__resto .menu__category:nth-child(3) {
+  animation-delay: 300ms;
+}
+#page__resto .menu__category:nth-child(4) {
+  animation-delay: 400ms;
 }
 #page__resto .menu__category .list__item {
   display: flex;
   overflow: hidden;
-}
-#page__resto .menu__category .list__item:nth-child(1) {
-  animation-delay: 100ms;
-}
-#page__resto .menu__category .list__item:nth-child(2) {
-  animation-delay: 200ms;
-}
-#page__resto .menu__category .list__item:nth-child(3) {
-  animation-delay: 300ms;
 }
 #page__resto .menu__category .item__price {
   margin-left: auto;
@@ -464,7 +464,7 @@ footer .footer_icon {
   display: grid;
   place-items: center;
   margin: 5rem;
-  margin-top: -25px;
+  margin-top: 1rem;
 }
 @media (min-width: 992px) {
   #page__resto div.order {

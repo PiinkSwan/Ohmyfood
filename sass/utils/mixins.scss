@@ -106,7 +106,7 @@
         display: grid;
         place-items: center;
         transform-origin: top;
-        animation: disappear 200ms 3s forwards;
+        animation: disappear 200ms 1s forwards;
         &::after {
             content: "";
             height: 100px;
@@ -115,6 +115,6 @@
             border-top: 5px solid $color-primary;
             border-bottom: 5px solid $color-secondary;
             border-radius: 50%;
-            animation: spin 3s infinite linear;
+            animation: spin 2s infinite linear;
         }
 }

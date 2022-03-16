@@ -79,24 +79,24 @@
         width: 100%;
         object-fit: cover;
     }
-    .menu__category {
-        background-color: $light-grey;
-        border-radius: 1rem;
-        overflow: hidden;
-        margin: 1rem;
-        @include base-white;
-        animation-fill-mode: both;
-        animation: appear 2s;
-        .list__item {
-            display: flex;
-            overflow: hidden;
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                animation-delay: 100ms * $i;
-            }
+.menu__category {
+    background-color: $light-grey;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+    @for $i from 2 through 4 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
         }
-        
-    }
+     }
+    animation-fill-mode: both;
+    animation: appear 1s;
+    margin: 1rem;
+    @include base-white;
+    .list__item {
+        display: flex;
+        overflow: hidden;
+        }
         .item__price {
             margin-left: auto;
             font-weight: 900;
@@ -149,7 +149,7 @@
         display: grid;
         place-items: center;
         margin: 5rem;
-        margin-top: -25px;
+        margin-top: 1rem;
         button {
             @include btn;
         }
