@@ -5,12 +5,9 @@
   "main": "index.html",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "build": "postcss style.css ./build/style.min.css"
+    "prefix": "postcss ./css/style.css --use autoprefixer -d./css/prefixed/"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "postcss": "^8.4.12",
-    "postcss-cli": "^9.1.0"
-  }
+  "browerslist": "last 4 versions"
 }
