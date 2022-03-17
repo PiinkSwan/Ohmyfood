@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.maps {
+  margin-bottom: 4rem;
+}
+
+h4,
+h3,
+p {
+  margin: 0;
+}
+
+footer {
+  margin-top: -2rem;
+}
+/*# sourceMappingURL=base.css.map */
