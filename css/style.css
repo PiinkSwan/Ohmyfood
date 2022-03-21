@@ -169,8 +169,9 @@ header h1 {
 }
 
 .menus {
-  padding: 9px;
-  margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  background-color: #f5f4f4;
+  margin: -1rem;
 }
 @media (min-width: 768px) {
   .menus .menus__title {
@@ -179,16 +180,13 @@ header h1 {
   }
 }
 .menus h2 {
-  margin-left: 1rem;
-  background-color: #f5f4f4;
   margin: -1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .menus .menus__cards {
   display: grid;
   flex-wrap: wrap;
   gap: 2rem;
-  background-color: #f5f4f4;
   padding: 1rem;
   margin: -1.5rem;
   padding-bottom: 6rem;

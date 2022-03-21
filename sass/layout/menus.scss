@@ -3,8 +3,10 @@
 
 
 .menus {
-    padding: 9px;
-    margin-bottom: 2rem;
+    padding: 3rem 2rem;
+    background-color: $light-grey;
+    margin: -1rem;
+    
     .menus__title {
         @media (min-width: $mobile) {
             text-align: center;
@@ -12,16 +14,13 @@
         }
     }
     h2 {
-        margin-left: 1rem;
-        background-color: $light-grey;
         margin: -1.5rem;
-        padding: 1rem;
+        padding: 1.5rem;
     }
     .menus__cards {
         display: grid;
         flex-wrap: wrap;
         gap: 2rem;
-        background-color: $light-grey;
         padding: 1rem;
         margin: -1.5rem;
         padding-bottom: 6rem;
