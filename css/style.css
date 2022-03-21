@@ -179,6 +179,9 @@ header h1 {
 }
 .menus h2 {
   margin-left: 1rem;
+  background-color: #f5f4f4;
+  margin: auto;
+  padding: 1rem;
 }
 .menus .menus__cards {
   display: grid;
