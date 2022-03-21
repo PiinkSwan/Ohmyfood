@@ -8,12 +8,13 @@
     .menus__title {
         @media (min-width: $mobile) {
             text-align: center;
+            margin: auto;
         }
     }
     h2 {
         margin-left: 1rem;
         background-color: $light-grey;
-        margin: auto;
+        margin: -1.5rem;
         padding: 1rem;
     }
     .menus__cards {

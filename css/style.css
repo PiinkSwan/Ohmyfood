@@ -175,12 +175,13 @@ header h1 {
 @media (min-width: 768px) {
   .menus .menus__title {
     text-align: center;
+    margin: auto;
   }
 }
 .menus h2 {
   margin-left: 1rem;
   background-color: #f5f4f4;
-  margin: auto;
+  margin: -1.5rem;
   padding: 1rem;
 }
 .menus .menus__cards {
